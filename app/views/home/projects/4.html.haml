@@ -1,0 +1,38 @@
+%section#portfolio-subpage
+  %header.container
+    .row
+      .col-md-12
+        .slogan-4
+          %h3.light PROJECT
+          %h2.heading-light AFTERSTEPS
+  #portfolio-project.container
+    .row
+      .col-lg-6.col-sm-6
+        %script
+          $(document).ready(function() {$('.portfolio-slideshow ul').responsiveSlides({nav: true, prevText: '<i class="fa fa-angle-left"></i>', nextText: '<i class="fa fa-angle-right"></i>'})});
+        .portfolio-slideshow
+          %ul
+            %li
+              %a{"data-lightbox" => "portfolio1", :href => image_path("portfolio/after-steps-1.jpg")}
+                %img{:alt => "", :src => image_path("portfolio/after-steps-1.jpg")}
+            %li
+              %a{"data-lightbox" => "portfolio1", :href => image_path("portfolio/after-steps-1.jpg")}
+                %img{:alt => "", :src => image_path("portfolio/after-steps-2.jpg")}
+            %li
+              %a{"data-lightbox" => "portfolio1", :href => image_path("portfolio/after-steps-1.jpg")}
+                %img{:alt => "", :src => image_path("portfolio/after-steps-3.jpg")}
+      #portfolio-description.col-lg-6.col-sm-6
+        %header
+          %h4 04
+          %p= link_to 'aftersteps.com', 'http://aftersteps.com/'
+        .divider-2
+        %p AfterSteps is an end of life planning tool that helps you get your affairs in order and protect your loved ones from emotional stress and financial burden.
+        %p On this project I primarily redesigned their landing page to be responsive based off of earlier designs and created responsive email templates for their marketing emails.
+        .divider-2
+        %ul
+          %strong Technologies:
+          %li Ruby on Rails
+          %li Foundation Framework
+          %li SASS &amp; CoffeeScript
+          %li Responive Email Design
+          %li Heroku

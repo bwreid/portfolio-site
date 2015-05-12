@@ -1,0 +1,28 @@
+%section#portfolio-subpage
+  %header.container
+    .row
+      .col-md-12
+        .slogan-4
+          %h3.light PROJECT
+          %h2.heading-light TURBOVOTE
+  #portfolio-project.container
+    .row
+      .col-lg-6.col-sm-6
+        %a{"data-lightbox" => "portfolio", :href => "assets/img/570x570.gif"}
+          = image_tag("portfolio/turbovote-1.jpg")
+      #portfolio-description.col-lg-6.col-sm-6
+        %header
+          %h4 01
+          %p= link_to 'turbovote.org', 'http://turbovote.org'
+        .divider-2
+        %p The majority of my time is spent helping to develop TurboVote, a product from Democracy Works. As a software engineer here, I've worked as a full-stack developer.
+        %p Our app was initially a Ruby on Rails application; however, we have lately been coding in Clojure and using Docker to host our various services.
+        .divider-2
+        %ul
+          %strong Technologies:
+          %li Ruby on Rails
+          %li SASS &amp; CoffeeScript
+          %li Clojure &amp; ClojureScript
+          %li Rspec &amp; Capybara
+          %li MySQL &amp; Redis
+          %li Docker &amp; AWS

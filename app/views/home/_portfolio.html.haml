@@ -1,0 +1,45 @@
+%section#portfolio.section.gap-1.text-edit
+  .container
+    .row
+      .col-md-12.column
+        %section#portfolio-container.portfolio-type-1
+          #portfolio-display
+            #portfolio-loader
+            #portfolio-content
+          %nav
+            %ul
+              %li.current-category
+                %a{"data-filter" => "*", :href => "#"} all
+              %li
+                %a{"data-filter" => ".front-end", :href => "#"} front-end
+              %li
+                %a{"data-filter" => ".back-end", :href => "#"} back-end
+              %li
+                %a{"data-filter" => ".design", :href => "#"} design
+              %li
+                %a{"data-filter" => ".project-management", :href => "#"} project management
+          #portfolio-items
+            %a.item.back-end{:href => '#', 'data-link' => portfolio_url({project_id: 1})}
+              %div
+                = image_tag("portfolio/turbovote-0.jpg")
+                .portfolio-info
+                  %h4 01
+                  %p turbovote.org
+            %a.item.front-end.back-end{:href => "#", 'data-link' => portfolio_url({project_id: 2})}
+              %div
+                = image_tag("portfolio/ballot-scout-0.jpg")
+                .portfolio-info
+                  %h4 02
+                  %p ballotscout.org
+            %a.item.front-end.back-end.project-management.design{:href => "#", 'data-link' => portfolio_url({project_id: 3})}
+              %div
+                = image_tag("portfolio/cool-culture-0.jpg")
+                .portfolio-info
+                  %h4 03
+                  %p coolcultureapp.org
+            %a.item.front-end.design{:href => "#", 'data-link' => portfolio_url({project_id: 4})}
+              %div
+                = image_tag("portfolio/after-steps-0.jpg")
+                .portfolio-info
+                  %h4 04
+                  %p aftersteps.com

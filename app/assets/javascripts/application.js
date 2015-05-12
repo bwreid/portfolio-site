@@ -13,4 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require plugins.js
+//= require jquery.themepunch.revolution.min.js
+//= require jquery.themepunch.tools.min.js
 //= require_tree .

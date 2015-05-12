@@ -1,0 +1,26 @@
+%section#portfolio-subpage
+  %header.container
+    .row
+      .col-md-12
+        .slogan-4
+          %h3.light PROJECT
+          %h2.heading-light BALLOT SCOUT
+  #portfolio-project.container
+    .row
+      .col-lg-6.col-sm-6
+        %a{"data-lightbox" => "portfolio", :href => "assets/img/570x570.gif"}
+          = image_tag("portfolio/ballot-scout-1.jpg")
+      #portfolio-description.col-lg-6.col-sm-6
+        %header
+          %h4 02
+          %p= link_to 'ballotscout.org', 'http://democracy.works/ballotscout/'
+        .divider-2
+        %p Democracy Work's second official product, Ballot Scout is a ballot tracking tool that increases communication between county clerks and voters.
+        %p This app is built entirely in Clojure and ClojureScript, with heavy reliance on the React wrapper, Om. I lead the design of the main dashboard and implementing it.
+        .divider-2
+        %ul
+          %strong Technologies:
+          %li Clojure &amp; ClojureScript
+          %li SASS
+          %li Datomic
+          %li Docker

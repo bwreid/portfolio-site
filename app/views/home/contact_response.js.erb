@@ -1,0 +1,8 @@
+if(<%= @valid %>) {
+  $('.contactform-1').find("input[type=text], textarea").val("");
+  $('h6#error-message').hide();
+  $('h6#success-message').show();
+} else {
+  $('h6#success-message').hide();
+  $('h6#error-message').show();
+}

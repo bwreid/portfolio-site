@@ -1,0 +1,38 @@
+%section#portfolio-subpage
+  %header.container
+    .row
+      .col-md-12
+        .slogan-4
+          %h3.light PROJECT
+          %h2.heading-light COOL CULTURE
+  #portfolio-project.container
+    .row
+      .col-lg-6.col-sm-6
+        %script
+          $(document).ready(function() {$('.portfolio-slideshow ul').responsiveSlides({nav: true, prevText: '<i class="fa fa-angle-left"></i>', nextText: '<i class="fa fa-angle-right"></i>'})});
+        .portfolio-slideshow
+          %ul
+            %li
+              %a{"data-lightbox" => "portfolio1", :href => image_path("portfolio/cool-culture-1.jpg")}
+                %img{:alt => "", :src => image_path("portfolio/cool-culture-1.jpg")}
+            %li
+              %a{"data-lightbox" => "portfolio1", :href => image_path("portfolio/cool-culture-1.jpg")}
+                %img{:alt => "", :src => image_path("portfolio/cool-culture-2.jpg")}
+            %li
+              %a{"data-lightbox" => "portfolio1", :href => image_path("portfolio/cool-culture-1.jpg")}
+                %img{:alt => "", :src => image_path("portfolio/cool-culture-3.jpg")}
+      #portfolio-description.col-lg-6.col-sm-6
+        %header
+          %h4 03
+          %p= link_to 'coolcultureapp.org', 'http://coolcultureapp.org/'
+        .divider-2
+        %p Cool Culture helps over 50,000 income-eligible families access and enjoy 90 of NYC's world-class cultural institutions for free, providing children with experiences that improve literacy and learning. Their app is optimized for mobile using HTML5 and Angular.
+        %p On this project I helped add new essential features such as login accounts and a calendaring section where Museum events could be listed. I also created and designed their entire administrative dashboard so they could manage the application without a developer's help.
+        .divider-2
+        %ul
+          %strong Technologies:
+          %li Ruby on Rails
+          %li Angular
+          %li SASS
+          %li MongoDB
+          %li Heroku &amp; AWS

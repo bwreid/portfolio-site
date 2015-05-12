@@ -1,0 +1,34 @@
+%section#contact.section.gap-1.text-edit.bg-2
+  .container
+    .row
+      .col-lg-6.col-sm-6.column
+        %h6.color-1 LET'S WORK TOGETHER
+        %p.size-2 Interested in learning more about how I can help you and your project? Send me an email using the contact form to your right and we can get started.
+        %p.size-2 If you're looking for a quote, I'll need clear information on what already exists, what you need done, and what your current budget is for the work. I will then respond with additional questions.
+        %br
+        %br
+        .col-lg-6.col-sm-6.column
+          .contact-info-1
+            %i.fa.fa-map-marker
+            Denver, Colorado
+        .col-lg-6.col-sm-6.column
+          .contact-info-1
+            %i.fa.fa-phone
+            +1 (347) 450 2435
+      .col-lg-6.col-sm-6.column
+        = form_tag('/contact', method: "post", remote: true, class: "contactform-1") do
+          %div
+            .col-lg-6.col-sm-6.column
+              = text_field_tag "contact[name]", nil, placeholder: "Full Name"
+            .col-lg-6.col-sm-6.column
+              = text_field_tag "contact[email]", nil, placeholder: "Email"
+            .clearfix
+            .col-md-12
+              = text_field_tag "contact[subject]", nil, placeholder: "Subject"
+            .clearfix
+            .col-md-12
+              = text_area_tag "contact[message]", nil, placeholder: "Please write your message here."
+              = content_tag :button, "Submit", type: :submit, class: "button button-1"
+
+          %h6#success-message.color-1 Thanks for your message! I will get back to you soon.
+          %h6#error-message.color-1 All fields are required and must be propertly formatted. Please try again.

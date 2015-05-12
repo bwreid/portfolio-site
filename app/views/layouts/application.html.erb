@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>PortfolioSite</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <head>
+    <title>B. Wes Reid</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <!--[if lt IE 9]>
+    <%= stylesheet_link_tag 'ie.css', media: 'all', 'data-turbolinks-track' => true %>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <%= javascript_include_tag 'html5shiv.js', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'respond.js', 'data-turbolinks-track' => true %>
+    <![endif]-->
+  </head>
+  
+  <%= yield %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
 </html>
