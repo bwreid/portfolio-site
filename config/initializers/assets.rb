@@ -5,5 +5,8 @@ Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile << /\.(?:svg|eot|woff|ttf)\z/
 Rails.application.config.assets.precompile += %w(
   ie.css html5shiv.js respond.js
-  settings-ie8.css
+  settings-ie8.css animate.min.css
+  lineicons.css font-awesome.min.css
+  lightbox.min.css jquery.bxslider.css
+  prettyPhoto.css
   )
