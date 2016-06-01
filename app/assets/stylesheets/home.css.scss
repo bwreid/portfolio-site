@@ -86,7 +86,7 @@ $general: #fc4949;
     opacity: $value;
     -moz-opacity: $value;
     -khtml-opacity: $value;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=(@{opacityPercentage}))"; 
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=(@{opacityPercentage}))";
     filter: "alpha(opacity = (@{opacityPercentage}))";
 }
 
@@ -235,6 +235,14 @@ strong {
 
 .gap-1 {
     padding: 130px 0;
+
+    &.top {
+      padding-bottom: 0;
+    }
+
+    &.bottom {
+      padding-top: 0;
+    }
 }
 
 .mask:after {
@@ -334,7 +342,7 @@ html, body {
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box;   
+    box-sizing: border-box;
 }
 
 .clearfix {
@@ -547,7 +555,7 @@ h2.highlight {
         height: 45px !important;
         line-height: 45px !important;
     }
-    
+
     .tp-rightarrow.default .tp-arr-allwrapper:after, .tp-leftarrow.default .tp-arr-allwrapper:after {
         line-height: 45px !important;
     }
@@ -669,7 +677,7 @@ h2.highlight {
     position: relative;
     -webkit-animation: slide 1s linear infinite;
     -moz-animation: slide 1s linear infinite;
-    animation: slide 1s linear infinite;     
+    animation: slide 1s linear infinite;
     @include border-radius(10px);
 }
 
@@ -708,7 +716,7 @@ h2.highlight {
     #main-menu {
         background-color: #000 !important;
         border-bottom: none !important;
-        
+
         .desktop-menu > .menu-container {
             > ul > li > a {
 
@@ -718,22 +726,22 @@ h2.highlight {
                 color: #fff !important;
             }
         }
-        
-        
+
+
     }
-    
+
     .portfolio-info-2 {
         h4 {
             color: #fff !important;
         }
     }
-    
+
     .menu-type-3 .desktop-menu > .menu-container {
         > ul > li:hover > a:after, ul > .active > a:after, ul > .current_menu_item > a:after {
             color: #fff !important;
         }
     }
-    
+
 }
 
 .menu-visible {
@@ -1063,7 +1071,7 @@ h2.highlight {
             > a {
                 text-decoration: none;
                 color: #292929;
-                font-size: 11px;                
+                font-size: 11px;
             }
 
             > a:hover {
@@ -1242,7 +1250,7 @@ h2.highlight {
     }
 }
 
-.mailing-box { 
+.mailing-box {
     color: #fff;
 
     input[type="email"] {
@@ -1254,11 +1262,11 @@ h2.highlight {
         font-weight: 300;
         border-bottom: 1px solid #787878 !important;
     }
-    
+
     .mce_inline_error {
         margin: 5px 0 !important;
     }
-    
+
     #mce-EMAIL {
         margin: 0 !important;
     }
@@ -1755,7 +1763,7 @@ h2.highlight {
     * {
         color: #fff !important;
     }
-    
+
     h3 {
         color: #676666 !important;
     }
@@ -1763,7 +1771,7 @@ h2.highlight {
 
 .slogan-4 {
     text-align: center;
-    
+
     margin-bottom: 35px;
 
     hr {
@@ -1788,7 +1796,7 @@ h2.highlight {
     h3 {
         color: #676666 !important;
     }
-    
+
     h2 {
         color: #fff !important;
     }
@@ -2245,7 +2253,7 @@ h2.highlight {
   perspective: 1000;
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
-       
+
         p {
             margin-bottom: 0 !important;
             line-height: 24px !important;
@@ -2255,7 +2263,7 @@ h2.highlight {
 .flip-container:hover .flipper, .flip-container.hover .flipper {
         transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);    
+    -moz-transform: rotateY(180deg);
 }
 
 .flip-container, .front, .back {
@@ -2295,7 +2303,7 @@ h2.highlight {
     h4 {
         margin-bottom: 0;
     }
-    
+
     i {
         color: $general;
         font-size: 32px;
@@ -2330,7 +2338,7 @@ h2.highlight {
     position: relative;
     text-align: center;
     perspective: 1000;
-    
+
     .front-ib {
         background-color: #fff;
         padding: 27px 30px;
@@ -2338,12 +2346,12 @@ h2.highlight {
         -moz-transform: rotateY(0deg);
         -webkit-transform: rotateY(0deg);
         @include transition;;
-        
+
         h4 {
             margin-bottom: 0 !important;
         }
     }
-    
+
     .back-ib {
         background-color: #fff;
         padding: 27px 30px;
@@ -2360,7 +2368,7 @@ h2.highlight {
         transition: all 500ms;
         -moz-transition: all 500ms;
         -webkit-transition: all 500ms;
-        
+
     }
 
     i {
@@ -2368,11 +2376,11 @@ h2.highlight {
         color: $general;
         @include transition;;
     }
-    
+
     .front-ib {
         transition-delay: 500ms !important;
     }
-    
+
     .back-ib {
         transition-delay: 0ms !important;
     }
@@ -2382,7 +2390,7 @@ h2.highlight {
     .front-ib {
         transition-delay: 0ms !important;
     }
-    
+
     .back-ib {
         transition-delay: 500ms !important;
     }
@@ -2394,7 +2402,7 @@ h2.highlight {
         -moz-transform: rotateY(90deg);
         -webkit-transform: rotateY(90deg);
     }
-    
+
     .back-ib {
         transform: rotateY(0deg);
         -moz-transform: rotateY(0deg);
@@ -2551,7 +2559,7 @@ h2.highlight {
 
     header {
         margin-bottom: 20px;
-        
+
         h5 {
             color: #fff;
             font-size: 20px;
@@ -2595,7 +2603,7 @@ h2.highlight {
 }
 
 .infobox-7:hover {
-        
+
         i {
             background-color: $general;
             color: #fff;
@@ -2672,11 +2680,11 @@ h2.highlight {
     .cd-timeline-block {
         margin: 4em 0;
     }
-    
+
     .cd-timeline-block:first-child {
         margin-top: 0;
     }
-    
+
     .cd-timeline-block:last-child {
         margin-bottom: 0;
     }
@@ -2714,11 +2722,11 @@ h2.highlight {
         -webkit-transform: translateZ(0);
         -webkit-backface-visibility: hidden;
     }
-    
+
     .cssanimations .cd-timeline-img.is-hidden {
         visibility: hidden;
     }
-    
+
     .cssanimations .cd-timeline-img.bounce-in {
         visibility: visible;
         -webkit-animation: cd-bounce-1 0.6s;
@@ -3027,7 +3035,7 @@ h2.highlight {
     }
 
     .divider-2 {
-        margin: 19px 0 !important;    
+        margin: 19px 0 !important;
     }
 
     a {
@@ -3451,7 +3459,7 @@ section#comments {
 
 
 .editor-styles {
-    font-size: 12px;   
+    font-size: 12px;
 }
 
 
@@ -3555,31 +3563,31 @@ section#comments {
         border-bottom: 1px solid #eee !important;
         padding: 30px !important;
     }
-    
+
     .col-3 {
         width: 100%;
         padding: 75px 20px;
         display: block;
     }
-    
+
     .menu-type-2 {
         #logo {
             padding: 0 10px !important;
         }
     }
-    
-    
+
+
     #right-box {
         margin: 0 !important;
         width: 100% !important;
     }
-    
+
     .mc-field-group, .submit {
         float: none !important;
         width: 100% !important;
         margin-bottom: 15px;
     }
-    
+
     .mc-field-group input[type="email"] {
         font-size: 13px !important;
     }
@@ -3643,17 +3651,17 @@ section#comments {
         background-position: center top !important;
         background-size: cover !important;
     }
-    
+
     .medium-1 {
         font-size: 15px;
         line-height: 25px;
     }
-    
+
     .medium-2 {
         font-size: 25px;
         line-height: 35px;
     }
-    
+
     #header-title-5 {
         h2 {
             font-size: 32px !important;
@@ -3698,7 +3706,7 @@ section#comments {
             margin: 0 !important;
         }
     }
-    
+
     .infobox-7 {
         padding-left: 50px;
         i {
@@ -3706,10 +3714,10 @@ section#comments {
             height: 30px;
             line-height: 30px;
             font-size: 14px;
-            
+
         }
     }
-    
+
     .accordions {
         >div > span {
             display: none;
